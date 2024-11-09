@@ -13,6 +13,10 @@ app.use(express.json({
     limit: '50mb'
 }));
 
+app.use(cors({
+    origin: 'https://visionary-ai-9ag2.vercel.app', // replace with your Vercel domain
+}));
+
 app.use('/api/v1/post',postRoutes);
 app.use('/api/v1/dalle', dalleRoutes);
 
