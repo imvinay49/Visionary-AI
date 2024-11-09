@@ -14,8 +14,9 @@ app.use(express.json({
 }));
 
 app.use(cors({
-    origin: 'https://visionary-ai-9ag2.vercel.app', // replace with your Vercel domain
+    origin: [/https:\/\/visionary-ai-9ag2.*\.vercel\.app$/],
 }));
+
 
 app.use('/api/v1/post',postRoutes);
 app.use('/api/v1/dalle', dalleRoutes);
