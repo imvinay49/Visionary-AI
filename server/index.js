@@ -8,13 +8,14 @@ import dalleRoutes from './routes/dalleRoutes.js';
 dotenv.config();
 
 const app = express();
-app.use(cors());
 app.use(express.json({
     limit: '50mb'
 }));
 
 app.use(cors({
-    origin: [/https:\/\/visionary-ai-9ag2.*\.vercel\.app$/],
+    origin: 'https://visionary-ai-9ag2-4mf1mq140-imvinay49s-projects.vercel.app',
+    methods: 'GET,POST,PUT,DELETE', // Add methods as needed
+    credentials: true,
 }));
 
 
