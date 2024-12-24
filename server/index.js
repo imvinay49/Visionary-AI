@@ -16,7 +16,7 @@ app.use(
 
 app.use(
   cors({
-    origin: "https://visionary-2lqmf2w88-imvinay49s-projects.vercel.app",
+    origin: "https://visionary-aizsf9f0j-imvinay49s-projects.vercel.app",
     methods: "GET,POST,PUT,DELETE", // Add methods as needed
     credentials: true,
   })
